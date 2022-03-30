@@ -30,19 +30,19 @@ if (!isset($_SESSION['user_id'])) {
                 <form method="post" action="">
                     <div class="form-group">
                         <label for="usuario">Nombre:</label>
-                        <input id="usuario" class="form-control" type="text" name="usuario">
+                        <input id="usuario" class="form-control" type="text" name="usuario" required>
                     </div>
                     <div class="form-group">
                         <label for="direccion">Direccion:</label>
-                        <input id="direccion" class="form-control" type="text" name="direccion">
+                        <input id="direccion" class="form-control" type="text" name="direccion" required>
                     </div>
                     <div class="form-group">
                         <label for="telefono">Telefono:</label>
-                        <input id="telefono" class="form-control" type="text" name="telefono">
+                        <input id="telefono" class="form-control" type="text" name="telefono" required>
                     </div>
                     <div class="form-group">
                         <label for="dui">DUI:</label>
-                        <input id="dui" class="form-control" type="text" name="dui">
+                        <input id="dui" class="form-control" type="text" name="dui" required>
                     </div> <br>
                     <button class="btn btn-primary" name="registro" type="submit">Guardar</button>
                 </form>
