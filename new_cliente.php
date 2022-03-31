@@ -27,10 +27,10 @@ if (!isset($_SESSION['user_id'])) {
             <div class="col-6 p-5 bg-white shadow-lg rounded">
                 <h3>Nuevo Cliente</h3>
                 <hr>
-                <form method="post" action="">
+                <form method="post" action="registro_cliente.php">
                     <div class="form-group">
                         <label for="usuario">Nombre:</label>
-                        <input id="usuario" class="form-control" type="text" name="usuario" required>
+                        <input id="usuario" class="form-control" type="text" name="nombre" required>
                     </div>
                     <div class="form-group">
                         <label for="direccion">Direccion:</label>
@@ -44,8 +44,10 @@ if (!isset($_SESSION['user_id'])) {
                         <label for="dui">DUI:</label>
                         <input id="dui" class="form-control" type="text" name="dui" required>
                     </div> <br>
-                    <button class="btn btn-primary" name="registro" type="submit">Guardar</button>
+                    <button class="btn btn-primary" name="registro_cliente" type="submit">Guardar</button>
+                    <a href="new_cliente.php" class="btn btn-danger">Cancelar</a>
                 </form>
+                 
             </div>
 
 
