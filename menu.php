@@ -15,12 +15,15 @@
           </a>
           <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
             <li><a class="dropdown-item" href="new_cliente.php">Nuevo Cliente</a></li>
-            <li><a class="dropdown-item" href="estructura2.php">Administracion</a></li>
+            <li><a class="dropdown-item" href="empleados.php">Administracion</a></li>
             <li>
               <hr class="dropdown-divider">
             </li>
             <li><a class="dropdown-item" href="#">Something else here</a></li>
           </ul>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="admin_users.php">Usuarios</a>
         </li>
         <li class="nav-item">
           <a class="nav-link active" aria-current="page" href="php_cerrar.php">Salir</a>
