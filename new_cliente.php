@@ -27,27 +27,25 @@ if (!isset($_SESSION['user_id'])) {
             <div class="col-6 p-5 bg-white shadow-lg rounded">
                 <h3>Nuevo Cliente</h3>
                 <hr>
-                <form method="post" action="registro_cliente.php">
+                <form method="post" action="">
                     <div class="form-group">
                         <label for="usuario">Nombre:</label>
-                        <input id="usuario" class="form-control" type="text" name="nombre" required>
+                        <input id="usuario" class="form-control" type="text" name="usuario">
                     </div>
                     <div class="form-group">
                         <label for="direccion">Direccion:</label>
-                        <input id="direccion" class="form-control" type="text" name="direccion" required>
+                        <input id="direccion" class="form-control" type="text" name="direccion">
                     </div>
                     <div class="form-group">
                         <label for="telefono">Telefono:</label>
-                        <input id="telefono" class="form-control" type="text" name="telefono" required>
+                        <input id="telefono" class="form-control" type="text" name="telefono">
                     </div>
                     <div class="form-group">
                         <label for="dui">DUI:</label>
-                        <input id="dui" class="form-control" type="text" name="dui" required>
+                        <input id="dui" class="form-control" type="text" name="dui">
                     </div> <br>
-                    <button class="btn btn-primary" name="registro_cliente" type="submit">Guardar</button>
-                    <a href="new_cliente.php" class="btn btn-danger">Cancelar</a>
+                    <button class="btn btn-primary" name="registro" type="submit">Guardar</button>
                 </form>
-                 
             </div>
 
 

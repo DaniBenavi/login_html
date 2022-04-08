@@ -30,7 +30,10 @@
                     $query->execute();
 
                     if ($query->rowCount() > 0) {
-                        echo '<div class="alert alert-danger" role="alert">¡La dirección de correo electrónico ya está registrada!</div>';
+                        echo '
+                        <div class="alert alert-danger" role="alert">
+                        ¡La dirección de correo electrónico ya está registrada!
+                        </div>';
                     }
 
                     if ($query->rowCount() == 0) {
@@ -41,9 +44,15 @@
                         $result = $query->execute();
 
                         if ($result) {
-                            echo '<div class="alert alert-success" role="alert">¡Tu registro fue exitoso!</div>';
+                            echo '
+                <div class="alert alert-success" role="alert">
+                ¡Tu registro fue exitoso!
+                </div>';
                         } else {
-                            echo '<div class="alert alert-danger" role="alert">¡Algo salió mal!</div>';
+                            echo '
+                <div class="alert alert-danger" role="alert">
+                ¡Algo salió mal!
+                </div>';
                         }
                     }
                 }
