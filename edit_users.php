@@ -15,7 +15,6 @@ if (isset($_POST['btn-update'])) {
     //hace referencia a la funcion update
     if ($crud->update($id, $username, $email)) {
         $msg = "<b>WOW, Actualizacion exitosa!</b>";
-        header('Location: admin_users.php');
     } else {
         $msg = "<b>ERROR, algo anda mal</b>";
     }

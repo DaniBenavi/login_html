@@ -13,9 +13,9 @@ if (isset($_POST['btn-delete'])) {
     $username = $_POST['usuario'];
     $email = $_POST['email'];
     //hace referencia a la funcion update
-    if ($crud->delete($id, $username, $email)) {
-        $msg = "<b>WOW, Eliminacion exitosa!</b>";
-        header('Location: admin_users.php');
+    if ($crud->update($id, $username, $email)) {
+        $msg = "<b>WOW, Actualizacion exitosa!</b>";
+        //header('Location: admin_users.php');
     } else {
         $msg = "<b>ERROR, algo anda mal</b>";
     }
@@ -53,21 +53,14 @@ if (isset($_GET['delete_id'])) {
                 <hr>
                 <form method="post">
                     <div class="form-group">
-                        <label for="ID">Usuario</label>
-                        <input id="ID" value="<?php echo $id; ?>" class="form-control" type="text" name="id" readonly=true>
-                    </div>
-                    <div class="form-group">
                         <label for="usuario">Usuario</label>
-                        <input id="usuario" value="<?php echo $username; ?>" class="form-control" type="text" name="usuario" readonly=true>
+                        <input id="usuario" value="<?php echo $username; ?>" class="form-control" type="text" name="usuario">
                     </div>
                     <div class="form-group">
                         <label for="email">Email</label>
-                        <input id="email" value="<?php echo $email; ?>" class="form-control" type="email" name="email" readonly=true>
-                    </div>
-                    <br>
+                        <input id="email" value="<?php echo $email; ?>" class="form-control" type="email" name="email">
+                    </div><br>
                     <button class="btn btn-primary" name="btn-delete" type="submit">Eliminar</button>
-                    
-                    <a href="admin_users.php"><button type="button" class="btn btn-danger">Cancelar</button></a>
                 </form>
             </div>
 
