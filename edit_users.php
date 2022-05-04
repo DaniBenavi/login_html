@@ -59,7 +59,24 @@ if (isset($_GET['edit_id'])) {
                         <label for="email">Email</label>
                         <input id="email" value="<?php echo $email; ?>" class="form-control" type="email" name="email">
                     </div><br>
-                    <button class="btn btn-primary" name="btn-update" type="submit">Actualizar</button>
+                    <button class="btn btn-primary" type="button" data-bs-toggle="modal" data-bs-target="#guardar">Actualizar</button>
+                    <div class="modal fade" tabindex="-1" id="guardar" aria-labelledby="ModalFade" aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title"><strong>Alerta!</strong></h5>
+                                    <button type="button" class="btn-close btn-danger" data-bs-dismiss="modal" aria-label="Close"><button>
+                                </div>
+                                <div class="modal-body">
+                                    <p>¿Desea Guardar cambios?</p>
+                                </div>
+                                <div class="modal-footer">
+                                    <button class="btn btn-primary" name="btn-update" type="submit">SI</button>
+                                    <button type="button" class="btn btn-danger" data-bs-dismiss="modal">NO</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </form>
             </div>
 

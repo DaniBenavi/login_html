@@ -11,6 +11,8 @@ class crud
     {
         $stmt = $this->db->prepare($query);
         $stmt->execute() > 0;
+        echo '<a class="btn btn-large btn-success" href="new_users.php"> Agregar Usuario</a><br>';
+        echo '<br>';
         while ($row = $stmt->fetch(PDO::FETCH_ASSOC)) {
 ?>
             <tr>
@@ -18,6 +20,7 @@ class crud
                 <td><?php echo $row['username']; ?></td>
                 <td><?php echo $row['email']; ?></td>
                 <td>
+
                     <a class="btn btn-large btn-success" href="edit_users.php?edit_id=<?php echo $row['id'] ?>"> Editar</a>
                 </td>
                 <td>

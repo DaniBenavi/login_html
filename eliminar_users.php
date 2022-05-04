@@ -28,7 +28,9 @@ if (isset($_POST['btn-del'])) {
         if (isset($_GET['alerta'])) {
         ?>
             <div class="alert alert-success">
-                <strong>Hecho!</strong> Usuario Eliminado Correcctamente!
+                <strong>Hecho!</strong> Usuario Eliminado Correcctamente! <br>
+                
+                <a href="admin_users.php" class="btn btn-large btn-success"><i class="glyphicon glyphicon-backward"></i>Ok</a>
             </div>
         <?php
         } else {
@@ -74,12 +76,12 @@ if (isset($_POST['btn-del'])) {
         <form method="POST">
             <input type="hidden" name="id" value="<?php echo $row['id']; ?>" />
             <button class="btn btn-large btn-primary" type="submit" name="btn-del"><i class="glyphicon glyphicon-trash"></i> Yes</button>
-            <a href="admin_users.php" class="btn btn-large btn-success"><i class="glyphicon glyphicon-backward"></i> No</a>
+            <a href="admin_users.php" class="btn btn-large btn-danger"><i class="glyphicon glyphicon-backward"></i> No</a>
         </form>
     <?php
             } else {
     ?>
-        <a href="admin_users.php" class="btn btn-large btn-success"><i class="glyphicon glyphicon-backward"></i>Regresar</a>
+
     <?php
             }
     ?>
